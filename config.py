@@ -10,8 +10,8 @@ import logging
 from logging.handlers import RotatingFileHandler
 
 #force user to join your backup channel leave 0 if you don't need.
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
-FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "0"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002226806894"))
+FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1002268015162"))
 
 if FORCE_SUB_CHANNEL > FORCE_SUB_CHANNEL2:
     temp = FORCE_SUB_CHANNEL2 
@@ -24,28 +24,28 @@ BOT_STATS_TEXT = os.environ.get("BOTS_STATS_TEXT","<b>BOT UPTIME 🌺</b>\n{upti
 USER_REPLY_TEXT = os.environ.get("USER_REPLY_TEXT", "Don't send me messages directly I'm only File Share bot! 📌")
 
 #your bot token here from https://telegram.me/BotFather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "") 
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7834318381:AAGi_e0Cy8mOyQcFZxGBL04QSoOHoyNQy0E") 
 #your api id from https://my.telegram.org/apps
-APP_ID = int(os.environ.get("APP_ID", ""))
+APP_ID = int(os.environ.get("APP_ID", "16229284"))
 #your api hash from https://my.telegram.org/apps
-API_HASH = os.environ.get("API_HASH", "")
+API_HASH = os.environ.get("API_HASH", "ebd1fead3cc15343bea10b5c164165ba")
 #your channel_id from https://t.me/MissRose_bot by forwarding dummy message to rose and applying command `/id` in reply to that message
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", ""))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002121817863"))
 #your id of telegram can be found by https://t.me/MissRose_bot with '/id' command
-OWNER_ID = int(os.environ.get("OWNER_ID", ""))
+OWNER_ID = int(os.environ.get("OWNER_ID", "1103137195"))
 #port set to default 8080
 PORT = os.environ.get("PORT", "8080")
 #your database url mongodb only You can use mongo atlas free cloud database
-DB_URL = os.environ.get("DB_URL", "mongodb+srv://sa8619:dsafb@cluster0.9uhmlry.mongodb.net/")
+DB_URL = os.environ.get("DB_URL", "mongodb+srv://devwilson:MDBots1976@mdbots.iaigyrl.mongodb.net/?retryWrites=true&w=majority")
 #your database name
-DB_NAME = os.environ.get("DB_NAME", "filestorebot")
+DB_NAME = os.environ.get("DB_NAME", "Anime-File-Bot")
 
 #for creating telegram thread for bot to improve performance of the bot
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "60"))
 #your start default command message.
 START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link. 💾")
 #your telegram tag without @
-OWNER_TAG = os.environ.get("OWNER_TAG", "")
+OWNER_TAG = os.environ.get("OWNER_TAG", "Thala_dev")
 #Time in seconds for message delete, put 0 to never delete
 TIME = int(os.environ.get("TIME", "60"))
 
